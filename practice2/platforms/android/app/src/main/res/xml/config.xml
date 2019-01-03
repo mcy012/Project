@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <feature name="Whitelist">
+        <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
+        <param name="onload" value="true" />
+    </feature>
+    <name>HelloCordova</name>
+    <description>
+        A sample Apache Cordova application that responds to the deviceready event.
+    </description>
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+    <allow-navigation href="*" />
+    <preference name="loglevel" value="DEBUG" />
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="CordovaHttpPlugin">
+        <param name="android-package" value="com.synconset.cordovahttp.CordovaHttpPlugin" />
+    </feature>
+    <feature name="Toast">
+        <param name="android-package" value="nl.xservices.plugins.Toast" />
+    </feature>
+    <feature name="SplashScreen">
+        <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
+        <param name="onload" value="true" />
+    </feature>
+    <preference name="Orientation" value="portrait" />
+    <platform name="android">
+        <!-- 세로모드에서의 인트로 이미지 -->
+        <splash src="res/screen/android/splash-port-xhdpi.png" density="port-xhdpi" />
+    </platform>
+
+    <!-- 인트로 화면 자동 종료 방지 -->
+    <preference name="AutoHideSplashScreen" value="false" />
+
+    <!-- 인트로화면이 단말기 방향 전환시 함께 회전할지 여부(android용)-->
+    <preference name="SplashMaintainAspectRatio" value="false" />
+</widget>

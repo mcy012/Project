@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, minimum-scale=1.0'>
+    <title>광고퀴즈 상품교환</title>
+    <link rel="stylesheet" href="css/foundationCss/foundation.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="css/bottom.css" rel="stylesheet">
+    <style>
+        #table_goods {
+            width: 150px font-size:small
+        }
+
+        img {
+            height: 150px;
+            width: 150px;
+        }
+
+        .buy {
+            background-color: white;
+            border-radius: 0.375em;
+            border: 0;
+            box-shadow: inset 0 0 0 2px #f56a6a;
+            color: #f56a6a;
+            font-weight: 600;
+            height: 2.0em;
+            width: 70px;
+        }
+
+        .position-left {
+            width: 110px;
+        }
+
+        .qqq {
+            width: auto;
+            list-style-position: inside;
+            list-style-type: none;
+        }
+
+        .qqq>li {
+            display: inline-block;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="margin: 20px" align="center"><strong>상품 교환</strong></h2>
+    <div align="right" style="padding: 15px">
+    </div>
+    <div>
+        <table class="type02 unstriped" id="table_point" border >
+            <tr>
+                <td rowspan="2">EASYMAP<br>Level 1/50</td>
+                <th>내 포인트</th>
+                <td id="my_point_total"></td>
+            </tr>
+            <tr>
+                <th>남은 기회</th>
+                <td id="my_left_chance"></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <footer>
+        <div class="mobile-app-icon-bar">
+            <button><i class="fa fa-gamepad" id="main" aria-hidden="true"></i></button>
+            <button><i class="fa fa-gift" id="goods" aria-hidden="true"></i></button>
+            <button><i class="fa fa-shopping-basket" id="basket" aria-hidden="true"></i></button>
+            <button><i class="fa fa-user-o" id="myInfo" aria-hidden="true"></i></button>
+        </div>
+    </footer>
+</body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="js/myInfo.js"></script>
+<script src="js/goodsList.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
+<script src="js/move.js"></script>
+<script>
+    $(document).foundation();
+</script>
+
+</html>
