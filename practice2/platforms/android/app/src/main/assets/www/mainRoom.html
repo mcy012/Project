@@ -29,8 +29,8 @@
     <div id="mainRoom">
         <header style="background-color: white">
             <div align="right">
-            <span id='myNick' align="right" style="font-weight: bold"></span>
-            <span style="font-weight: 100">님, 반갑습니다.</span>
+                <span id='myNick' align="right" style="font-weight: bold"></span>
+                <span style="font-weight: 100">님, 반갑습니다.</span>
             </div>
         </header>
         <div class="swiper-container">
@@ -42,7 +42,7 @@
         </div>
         <footer>
             <div class="mobile-app-icon-bar">
-                <button style="border: 2px solid"><i class="fa fa-gamepad mainRoom" aria-hidden="true"></i></button>
+                <button style="border: 2px solid"><i class="fa fa-gamepad quizRoom" aria-hidden="true"></i></button>
                 <button><i class="fa fa-gift goods" aria-hidden="true"></i></button>
                 <button><i class="fa fa-shopping-basket basket" aria-hidden="true"></i></button>
                 <button><i class="fa fa-user-o myInfo" aria-hidden="true"></i></button>
@@ -54,6 +54,8 @@
 <script src="js/gameStart.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/foundation.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+<script src="js/foundationJS/foundation.core.js"></script>
+<script src="js/foundationJS/foundation.reveal.js"></script>
 <script src="js/move.js"></script>
 <script src="js/backExit.js"></script>
 <script>
@@ -64,6 +66,7 @@
     var templete = myNick
 
     $('#myNick').append(templete);
+
 </script>
 <script>
     var swiper = new Swiper('.swiper-container', {
@@ -82,6 +85,7 @@
             el: '.swiper-pagination',
         },
     });
+
 </script>
 
 </html>
