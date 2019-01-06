@@ -16,6 +16,16 @@
         th {
             text-align: left;
         }
+        
+        table {
+            margin-bottom: 0px
+        }
+        
+        a {
+            color: black;
+            text-align: left; 
+            font-weight: bold;
+        }
 
     </style>
 </head>
@@ -43,19 +53,21 @@
     </table>
     <ul class="vertical menu accordion-menu" data-accordion-menu>
         <li>
-            <a href="#">구매 내역</a>
+            <a href="#" style="padding-left: 10px">구매 내역</a>
             <ul class="menu vertical nested">
-                <li><a href="#">Item 1A</a></li>
-                <li><a href="#">Item 1B</a></li>
+                <li style="text-align: right; font-size: 13px; font-weight: 100">상품 구매 내역</li>
+                <li><div style="border-bottom: 1px solid"><span>구입날짜</span><span>상품 이름</span><span>사용 포인트</span></div></li>
             </ul>
+        </li>
     </ul>
+
     <button class="button" id="logout">로그아웃</button>
     <footer>
         <div class="mobile-app-icon-bar">
             <button><i class="fa fa-gamepad main" aria-hidden="true"></i></button>
             <button><i class="fa fa-gift goods" aria-hidden="true"></i></button>
-            <button><i class="fa fa-shopping-basket goods" aria-hidden="true"></i></button>
-            <button><i class="fa fa-user-o myInfo" aria-hidden="true"></i></button>
+            <button><i class="fa fa-shopping-basket basket" aria-hidden="true"></i></button>
+            <button style="border: 2px solid"><i class="fa fa-user-o myInfo" aria-hidden="true"></i></button>
         </div>
     </footer>
 </body>
